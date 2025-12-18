@@ -1,5 +1,11 @@
+import Student from "../components/body/topStudent/student";
+import Header from "../components/header/headercontent/cont";
+
 export default function  HomePage(){
     return (
-        <h1>Home Page</h1>
+        <>
+            <Header />
+            <Student/>
+        </>
     )
 }
