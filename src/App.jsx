@@ -4,14 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/header/headercontent/cont'
 import Student from './components/body/topStudent/student'
+import HomePage from './pages/HomePage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header />
-      <Student/>
+      <HomePage />
     </>
   )
 }
