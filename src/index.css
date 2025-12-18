@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Beacon Aesthetic';
+  src: url('./assets/fonts/BeaconAesthetic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme{
+
+    --font-primary: 'Beacon Aesthetic', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+
+    /* font-colors */
+    --color-primary: #e08a00;
+    --color-secondary: #4A5565;
+}
+
+
+body {
+  font-family: 'Beacon Aesthetic', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+
+
+
+
+
+@import "tailwindcss";
