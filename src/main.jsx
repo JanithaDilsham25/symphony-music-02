@@ -7,8 +7,7 @@ import Student from './components/body/topStudent/student.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <GridOverlay />
-    <Student/>
+    {/* <GridOverlay /> */}
     <App />
   </StrictMode>,
 )
