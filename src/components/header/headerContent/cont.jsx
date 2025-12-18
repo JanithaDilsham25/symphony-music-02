@@ -9,7 +9,7 @@ import Layer1 from "../../../assets/homePage/Layer1.png";
 
 export default function Header() {
     return (
-        <div className="relative w-full h-[661px] overflow-hidden flex items-center justify-center lg:gap-16  lg:h-[960px] lg:py-[120px] lg:px-[120px] ">
+        <div className="relative w-full h-[661px] overflow-hidden flex items-center justify-center lg:gap-16  lg:h-[960px] lg:py-[120px] lg:px-[120px]">
 
 
             {/* Yellow colour vector  */}

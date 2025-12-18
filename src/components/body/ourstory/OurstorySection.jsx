@@ -5,7 +5,7 @@ import StoryImg from '../../../assets/StorySectionImg.png';
 function OurstorySection() {
   return (
     <>
-      {/* ================= MOBILE VIEW =================
+      {/* ================= MOBILE VIEW ================= */}
       <div className="lg:hidden w-full h-[710px] pr-3 pl-3 gap-2 flex flex-col items-center">
         <h2 className="
           w-[406px]
@@ -50,7 +50,7 @@ function OurstorySection() {
           <div className='w-[113px] h-[21px] font-secondary font-medium text-[16px] tracking-normal leading-[20.78px] text-[#454545] buttonname="hh" '>View About Us</div>
         </Button1>
       </div>
-      </div> */}
+      </div>
 
        
 
@@ -58,13 +58,15 @@ function OurstorySection() {
 
       {/* ================= DESKTOP VIEW ================= */}
       <div className="
-        flex flex-row
+        hidden lg:flex
+        lg:flex-row
         w-[1714.431640625px] 
-        h-[1714.431640625px]
-
+        h-[1146.43px] 
+        top-[896px]
+        left-[206px]
+        ml-[206px]
         justify-between items-center
-        px-[896px]
-        py-[120px]
+      
         
       ">
         {/* Text Section */}
@@ -84,18 +86,25 @@ function OurstorySection() {
           <div className="
             text-[24px]
             leading-9
+            font-normal
             text-[#454545]
             font-secondary
+            tracking-normal
+            scale-y-[20px]
+            gap-6
           ">
+            <p>
             Founded in 2010, Harmony Music School began with a simple mission: to
             make quality music education accessible to everyone. What started as
             a small studio with just three teachers has grown into one of the
             region's premier music institutions.
-            <br /><br />
+            </p>
+            <p>
             We believe that music is a universal language that transcends
             boundaries and enriches lives. Our dedicated team of professional
             musicians and educators work tirelessly to nurture talent, build
             confidence, and inspire a lifelong love of music.
+            </p>
           </div>
 
           <Button1 buttonname="View About Us" />
