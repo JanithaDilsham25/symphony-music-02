@@ -6,7 +6,7 @@ export default function Student() {
   return (
     <>
       {/* desktop */}
-      <section className="hidden lg:block relative">
+      <section className="hidden lg:block relative h-[2000px] ">
         <div className="w-[1330px] mx-auto pt-[40px] ">
          <div className="flex justify-center">
              <Topic
@@ -21,7 +21,7 @@ export default function Student() {
             <div className="flex flex-col gap-[200px] absolute left-0 top-0">
               <LeftTopStudent />
               <LeftTopStudent />
-            </div>
+          </div>
 
             {/* RIGHT COLUMN */}
             <div className="flex flex-col gap-[200px] absolute left-[541px] top-[379px]">
@@ -31,6 +31,7 @@ export default function Student() {
           </div>
         </div>
       </section>
+
 {/* mobile */}
       <section className="lg:hidden w-full">
         <div className="flex justify-center">

@@ -1,4 +1,4 @@
-import man from "../../../assets/man.png";
+import man from "../../../assets/topStudent/man.png";
 
 export default function LeftTopStudent({ mobile }) {
  

@@ -1,4 +1,4 @@
-import girl from "../../../assets/girl.png";
+import girl from "../../../assets/topStudent/girl.png";
 
 export default function RightTopStudent({ mobile }) {
  
