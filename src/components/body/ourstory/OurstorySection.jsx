@@ -82,7 +82,7 @@ function OurstorySection() {
       
 
           <div className="
-            text-[24px]
+            text-[24pt]
             leading-9
             text-[#454545]
             font-secondary
