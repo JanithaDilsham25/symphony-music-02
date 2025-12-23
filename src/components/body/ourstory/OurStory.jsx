@@ -5,10 +5,11 @@ import StoryImg from '../../../assets/StorySectionImg.png';
 function OurStory() {
   return (
    <>
-    <section className='w-full h-auto  flex justify-center items-cente'>
-        <div className='w-10/12    flex flex-row'>
+    <section className='w-full   flex justify-center text-center md:text-left items-center overflow-hidden'>
+        <div className='w-10/12    flex flex-row   md:justify-center md:items-center bg-amber-300'>
         
-            <div className='w-4/4 md:w-6/12  flex flex-col justify-center items-center md:block'>
+            <div className=' w-full md:w-6/12 md:flex  flex flex-col   h-full gap-[48px]'>
+
                 <Topic title="Our Story" />
                  <div className='w-3/4 md:hidden flex justify-center items-center gap-24'>
                     <img
@@ -44,11 +45,11 @@ function OurStory() {
             </div>
           
         </div>
-        <div className=' w-full md:w-6/12   hidden md:flex md:justify-center md:items-center  md:relative '>
+        <div className=' w-full md:w-6/12  h-full hidden md:flex  object-cover'>
             <img
                   src={StoryImg}
                   alt="Our Story"
-                  className="w-full    scale-90 md:scale-110 lg:scale-125 object-cover md:absolute"
+                  className="w-full h-full  "
              />
         </div>
         </div>

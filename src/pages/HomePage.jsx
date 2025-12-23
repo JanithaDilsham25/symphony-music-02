@@ -1,5 +1,3 @@
-import AllSection from "../components/body/expertInstructors/AllSection";
-import OurstorySection from "../components/body/ourstory/OurstorySection";
 import Student from "../components/body/topStudent/student";
 import Header from "../components/header/headercontent/cont";
 import OurStory from "../components/body/ourstory/OurStory";
