@@ -54,18 +54,18 @@ function OurstorySection() {
 
        
 
-
+       {/* w-[1714.431640625px] 
+       px-[896px]
+        py-[120px] */}
 
       {/* ================= DESKTOP VIEW ================= */}
       <div className="
         flex flex-row
-        w-[1714.431640625px] 
+        w-full
         h-[1714.431640625px]
 
         justify-between items-center
-        px-[896px]
-        py-[120px]
-        
+      
       ">
         {/* Text Section */}
         <div className="w-[788px] h-[508px] flex flex-col gap-12 text-left">
@@ -82,7 +82,7 @@ function OurstorySection() {
       
 
           <div className="
-            text-[24px]
+            text-[24pt]
             leading-9
             text-[#454545]
             font-secondary
