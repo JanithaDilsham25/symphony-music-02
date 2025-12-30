@@ -6,9 +6,9 @@ import icon2 from "../../../assets/icons/Icon2.png"
 function UpComingCard(props) {
   return (
     <>
-        <div className="w-9/12 flex justify-center items-center">
-          <div className="w-8/12 aspect-[6.57] border border-[#C7C7C7] rounded flex flex-row justify-between items-center">
-            <div className="w-3/12 h-full  flex items-center justify-center">
+        <div className="w-8/8 xl:w-9/12 flex justify-center items-center">
+          <div className="sm:w-8/8 aspect-[5.00] lg:w-8/12 xl:aspect-[6.57] border border-[#C7C7C7] rounded flex flex-row justify-between items-center">
+            <div className="sm:w-3/8 lg:w-3/12 h-full  flex items-center justify-center">
               <div
                 className="w-11/12 bg-amber-200 h-[90%] rounded-lg bg-cover bg-center "
                 style={{ backgroundImage: `url(${basic})` }}
