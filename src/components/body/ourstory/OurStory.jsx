@@ -5,31 +5,39 @@ import StoryImg from '../../../assets/StorySectionImg.png';
 function OurStory() {
   return (
    <>
-    <section className='w-full   flex justify-center text-center md:text-left items-center overflow-hidden'>
-        <div className='w-10/12    flex flex-row   md:justify-center md:items-center bg-amber-300'>
+    <section className='w-full   flex justify-center text-center lg:text-left items-center overflow-hidden '>
+        <div className='xl:w-10/12  w-full  flex flex-row   xl:justify-center xl:items-center bg-yellow-200'>
         
-            <div className=' w-full md:w-6/12 md:flex  flex flex-col   h-full gap-[48px]'>
-
-                <Topic title="Our Story" />
-                 <div className='w-3/4 md:hidden flex justify-center items-center gap-24'>
+            <div className=' w-full xl:w-6/12 xl:flex  flex flex-col   h-full xl:gap-[48px] justify-center items-center xl:items-start'>
+              <div className='w-full md:w-1/2 xl:w-6/12  flex flex-col justify-center item-center bg-green-600 '>
+                <div className=' flex justify-center item-center xl:block'>
+                  <Topic title="Our Story" />
+                </div>
+                
+                 <div className=' xl:hidden w-full flex justify-center items-center pt-0 bg-amber-900 '>
                     <img
                         src={StoryImg}
                         alt="Our Story"
-                        className="w-full  pt-0  gap-0 pb-10 scale-150"
+                        className="w-full  pt-0 object-contain gap-0 max-w-[320px] md:max-w-[600px] bg-red-200"
                      />
                 </div>
-                <div className=' h-auto flex flex-col justify-center items-center gap-[32px] md:block'>
+              </div>
+                
+                <div className='  flex flex-col justify-center items-center gap-[32px] xl:block'>
               
 
                   <div className="
-                    text-[16px]
-                    md:text-[18px]
-                    lg:text-[20px]
-                    leading-9
+                    text-[1rem]
+                   
+                    md:text-[1.125rem]
+                    xl:text-[1.25rem]
+                    xl:leading-9
+                    md:leading-7
                     text-[#454545]
                     font-secondary
                     text-center
-                    md:text-left
+                    xl:text-left
+                    xl:mb-6
                   ">
                     Founded in 2010, Harmony Music School began with a simple mission: to
                     make quality music education accessible to everyone. What started as
@@ -45,11 +53,11 @@ function OurStory() {
             </div>
           
         </div>
-        <div className=' w-full md:w-6/12  h-full hidden md:flex  object-cover'>
+        <div className=' w-full xl:w-8/12  hidden xl:flex  object-cover'>
             <img
                   src={StoryImg}
                   alt="Our Story"
-                  className="w-full h-full  "
+                  className="w-full object-contain max-w-full bg-amber-900"
              />
         </div>
         </div>
