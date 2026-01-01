@@ -13,7 +13,7 @@ function ExpertSection() {
     {
       icon: "src/assets/Frame 41.png",
       topic: "Flexible Schedule",
-     para: "Learn from professional musicians with years of teaching experience",
+      para: "Learn from professional musicians with years of teaching experience",
     },
     {
       icon: "src/assets/Frame 41.png",
@@ -33,67 +33,74 @@ function ExpertSection() {
   ];
 
   return (
-    <section className="w-full h-auto flex justify-center items-center">
+    <section className="w-full flex justify-center">
       <div className="w-10/12 flex flex-col gap-7">
 
-        {/* ================= MOBILE VIEW (UNCHANGED) ================= */}
+        {/* ================= MOBILE (Swiper) ================= */}
         <div className="block md:hidden">
           <Swiper
             modules={[Autoplay]}
             slidesPerView={1}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            className="w-full"
+            loop
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
           >
             {cards.map((card, i) => (
               <SwiperSlide key={i}>
-                <div className="h-auto">
-                  <Card
-                    icon={card.icon}
-                    topic={card.topic}
-                    para={card.para}
-                  />
-                </div>
+                <Card {...card} />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
 
-        {/* ================= DESKTOP VIEW (FIXED) ================= */}
-        <div className="hidden md:flex flex-col gap-7">
-
-          {/* TOP ROW */}
-          <div className="w-full flex gap-5 justify-center items-center">
-            <div className="w-2/12"></div>
-
-            {cards.slice(0, 2).map((card, i) => (
-              <div
-                key={i}
-                className="w-4/12 h-[256px]"
-              >
-                <Card {...card} />
-              </div>
-            ))}
-
-            <div className="w-2/12"></div>
+        {/* ================= TAB (8 COL GRID) ================= */}
+        <div className="w-full hidden md:grid xl:hidden grid-cols-8 gap-10 bg-green-200">
+          {/* Top row – 2 cards */}
+         
+          <div className="col-span-4 h-[256px]">
+            <Card {...cards[0]} />
           </div>
-
-          {/* BOTTOM ROW */}
-          <div className="w-full flex gap-5 justify-center">
-            {cards.slice(2, 5).map((card, i) => (
-              <div
-                key={i}
-                className="w-4/12 h-[256px]"
-              >
-                <Card {...card} />
-              </div>
-            ))}
+          <div className="col-span-4 h-[256px]">
+            <Card {...cards[1]} />
           </div>
+       
 
+          {/* Second row – 2 cards */}
+         
+          <div className="col-span-4 h-[256px]">
+            <Card {...cards[2]} />
+          </div>
+          <div className="col-span-4 h-[256px]">
+            <Card {...cards[3]} />
+          </div>
+       
+
+          {/* Last row – 1 card */}
+          <div className="col-span-2" />
+          <div className="col-span-4 h-[256px]">
+            <Card {...cards[4]} />
+          </div>
+          <div className="col-span-2" />
         </div>
+
+        {/* ================= DESKTOP (12 COL GRID) ================= */}
+        <div className="hidden xl:grid grid-cols-12 gap-5">
+          {/* Top row */}
+          <div className="col-span-2" />
+          {cards.slice(0, 2).map((card, i) => (
+            <div key={i} className="col-span-4 h-[256px]">
+              <Card {...card} />
+            </div>
+          ))}
+          <div className="col-span-2" />
+
+          {/* Bottom row */}
+          {cards.slice(2, 5).map((card, i) => (
+            <div key={i} className="col-span-4 h-[256px]">
+              <Card {...card} />
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
