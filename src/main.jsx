@@ -4,9 +4,12 @@ import './index.css'
 import App from './App.jsx'
 import GridOverlay from './layout/GridOverlay.jsx'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <GridOverlay />
+    {/* <GridOverlay /> */}
     <App />
+  
+    
   </StrictMode>,
 )

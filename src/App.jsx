@@ -1,16 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+
+import Header from "./components/header/headerContent/Header";
+import HomePage from "./pages/HomePage";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import Classes from "./pages/Classes";
+import Gallery from "./pages/Gallery";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className="w-full h-screen bg-black"></div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/events" element={<h1>This is Events</h1>} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          
+        </Routes>
+      </BrowserRouter>
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
