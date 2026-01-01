@@ -18,8 +18,8 @@ export default function  HomePage(){
             <div className="md:hidden">
                 <UpComingSlide />
             </div>
-            {/* <UpCommingSection />
-            <UpComingSlide /> */}
+            <UpCommingSection />
+            {/* <UpComingSlide /> */}
 
             
                 
