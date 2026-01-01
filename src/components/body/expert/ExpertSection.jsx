@@ -36,7 +36,7 @@ function ExpertSection() {
     <section className="w-full flex justify-center ">
       <div className="w-10/12 flex flex-col gap-7  ">
 
-        {/* ================= MOBILE (Swiper) ================= */}
+        {/* ================= MOBILE  ================= */}
         <div className="block md:hidden ">
           <Swiper
             modules={[Autoplay]}
