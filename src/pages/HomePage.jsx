@@ -12,6 +12,16 @@ export default function  HomePage(){
                 <Student/>
             </div>
         
+
+            <div className="md:hidden">
+                <UpComingSlide />
+            </div>
+            <UpCommingSection />
+            {/* <UpComingSlide /> */}
+
+            
+                
+            
         </>
     )
 }

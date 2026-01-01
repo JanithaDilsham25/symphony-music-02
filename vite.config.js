@@ -8,6 +8,9 @@ export default defineConfig({
     screens: {
       esm: "320px",
       sm: "480px",
+     // esm: "320px",
+      xsm: "480px",
+      sm:"640px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
