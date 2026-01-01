@@ -1,19 +1,17 @@
-
-import Student from "../components/body/topStudent/student"
-import UpCommingCard from "../components/body/upCommingEvents/UpComingCard"
-import Header from "../components/header/headerContent/Header"
-import UpComingSlide from "../section/homepage/UpComingSlide"
-import UpCommingSection from "../section/homepage/UpCommingSection"
-
-
+import Student from "../components/body/topStudent/student";
+import Header from "../components/header/headerContent/Header";
+import OurStory from "../components/body/ourstory/OurStory";
+import ExpertSection from "../components/body/expert/ExpertSection";
 export default function  HomePage(){
     return (
         <>
-            <Header />
-            
-            <div className="hidden md:flex">
-                <UpCommingSection />
+            <div className="w-full h-full flex flex-col">
+                <Header />
+                <OurStory/>
+                <ExpertSection/>
+                <Student/>
             </div>
+        
 
             <div className="md:hidden">
                 <UpComingSlide />
