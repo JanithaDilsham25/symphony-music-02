@@ -3,7 +3,7 @@ import Vector7 from "../../../assets/homePage/Vector7.png"; // Under vector
 import MaskgroupLg from "../../../assets/homePage/MaskgroupLg.png";
 import MaskgroupMd from "../../../assets/homePage/MaskgroupMd.png"; // Desktop background
 import Vector8 from "../../../assets/homePage/Vector8.svg"; // Mask overlay
-import Layer1 from "../../../assets/homePage/Layer1.png";
+import Logo from "../../../assets/homePage/Logo.png";
 
 import MaskgroupSm from "../../../assets/homePage/MaskgroupSm.png";
 import Vector9 from "../../../assets/homePage/Vector9.png";
@@ -66,7 +66,7 @@ export default function Header() {
       </div>
       <div className="absolute inset-0 z-20 flex flex-col  items-center gap-16 sm:gap-12 xl:gap-11 2xl:gap-16 md:gap-10  lg:gap-11   top-[18vh] md:top-[15vh] ">
         <div className="w-5/16 md:w-2/12 xl:w-9/72    ">
-          <img src={Layer1} alt="Icon" className="w-full h-auto" />
+          <img src={Logo} alt="Icon" className="w-full h-auto" />
         </div>
         {/* Hero Text*/}
 
