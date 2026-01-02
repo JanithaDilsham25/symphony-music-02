@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
-  const NavigationButton = ({ text }) => {
+  const NavigationButton = ({ text, to }) => {
     return (
-      <button className=" text-white hover:text-primary flex items-center justify-center px-5 py-1.5 xl:py-3 gap-2.5  transition-colors duration-300">
+      <Link to={to} className="bg-amber-300 text-white hover:text-primary flex items-center justify-center px-5 py-1.5 xl:py-3 gap-2.5  transition-colors duration-300">
         <span className="font-secondary font-medium md:text-[16px] lg:text-[18px] xl:text-[22px] 2xl:text-[24px] leading-6 lg:leading-9">
           {text}
         </span>
-      </button>
+      </Link>
     );
   };
 
@@ -16,11 +18,11 @@ export default function Navbar() {
         
       "
     >
-      <NavigationButton text="Classes" />
-      <NavigationButton text="Events" />
-      <NavigationButton text="Gallery" />
-      <NavigationButton text="About Us" />
-      <NavigationButton text="Contact Us" />
+      <NavigationButton text="Classes" to="/classes"/>
+      <NavigationButton text="Events" to="/events"/>
+      <NavigationButton text="Gallery" to="/gallery"/>
+      <NavigationButton text="About Us" to="/aboutus"/>
+      <NavigationButton text="Contact Us" to="/contactus"/>
     </nav>
   );
 }

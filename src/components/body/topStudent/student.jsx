@@ -6,25 +6,24 @@ export default function Student() {
   return (
     <>
       {/* desktop */}
-      <section className="hidden lg:block relative bg-red-600">
+      <section className="hidden lg:block relative">
         <div className="w-[1330px] mx-auto pt-[40px] ">
-         <div className="flex justify-center bg-amber-950">
+         <div className="flex justify-center">
              <Topic
             title="Our Top Students"
             subtitle="Meet our star performers who have achieved excellence through dedication and passion."
             
           />
          </div>
-              
-          <div className="w-fit h-full relative mt-[80px]">
-            
-            {/* Left Column */}
-            <div className="flex flex-col gap-[200px] absolute top-0 left-0">
+
+          <div className="relative mt-[80px]">
+            {/* LEFT COLUMN */}
+            <div className="flex flex-col gap-[200px] absolute left-0 top-0">
               <LeftTopStudent />
               <LeftTopStudent />
             </div>
 
-            {/* Right Column */}
+            {/* RIGHT COLUMN */}
             <div className="flex flex-col gap-[200px] absolute left-[541px] top-[379px]">
               <RightTopStudent />
               <RightTopStudent />

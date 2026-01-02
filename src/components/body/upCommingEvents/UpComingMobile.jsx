@@ -12,7 +12,7 @@ function UpComingMobile(props){
                             <div className="w-full text-[1.25rem] font-semibold">{props.title}</div>
                             <div className="w-full flex flex-col gap-1">
                                 <div className="flex flex-row items-center gap-3">
-                                    <div className="w-4.5 h-4.5 bg-amber-800"></div>
+                                    <div className="w-4.5 h-4.5 bg-amber-700"></div>
                                     <div className="text-[1rem] text-[#454545]">2025 Oct 10</div>
                                 </div>
                                 <div className="flex flex-row items-center gap-3">

@@ -20,6 +20,13 @@
     /* font-colors */
     --color-primary: #e08a00;
     --color-secondary: #4A5565;
+
+    --breakpoint-xsm: 430px;  /* custom small breakpoint */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
 
 
@@ -35,4 +42,5 @@ body {
 
 
 
-@import "tailwindcss";
+
+
