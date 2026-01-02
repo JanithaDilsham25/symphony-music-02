@@ -6,19 +6,19 @@ import StoryImg from '../../../assets/StorySectionImg.png';
 function OurStory() {
   return (
    <>
-    <section className='w-full flex justify-center text-center lg:text-left items-center overflow-hidden pt-9 pb-9'>
-        <div className='xl:w-9/12 w-full flex flex-row xl:justify-center xl:items-center lg:ml-5'>
+    <section className='w-full flex justify-center text-center lg:text-left items-center overflow-hidden pt-9 pb-9 mb-8'>
+        <div className='xl:w-10/12 w-full flex flex-row xl:justify-center xl:items-center lg:ml-5  pb-20'>
         
             <div className='w-full xl:w-6/12 xl:flex flex flex-col h-full xl:gap-[48px] justify-center items-center xl:items-start'>
               
-              <div className='w-full md:w-1/2 xl:w-6/12 flex flex-col justify-center items-center bg-pink-200'>
+              <div className='w-full md:w-1/2 xl:w-6/12 flex flex-col justify-center items-center'>
                 
                 {/* ✅ FIXED HERE */}
                 <div className='flex justify-center items-center xl:justify-start xl:items-start text-center xl:text-left w-full'>
                   <Topic title="Our Story" />
                 </div>
                 
-                <div className='xl:hidden w-full flex justify-center items-center -mt-12 md:-mt-16'>
+                <div className='xl:hidden w-full flex justify-center items-center -mt-12 md:-mt-16 '>
                   <img
                     src={StoryImg}
                     alt="Our Story"
@@ -59,11 +59,11 @@ function OurStory() {
 
             </div>
 
-            <div className='w-full xl:w-7/12 hidden xl:flex object-cover'>
+            <div className='w-full h-full  xl:w-6/12 hidden xl:flex object-cover '>
               <img
                 src={StoryImg}
                 alt="Our Story"
-                className="w-full object-contain max-w-full"
+                className="w-full object-contain max-w-full scale-125"
               />
             </div>
 
