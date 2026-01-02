@@ -13,14 +13,13 @@ export default function HomePage() {
         <OurStory />
         <ExpertSection />
         <Student />
-        {/* <UpComingSection /> */}
+        <UpComingSection />
         <div className="md:hidden">
           <UpComingSlide />
         </div>
       </div>
 
-      {/* <UpCommingSection />
-            <UpComingSlide /> */}
+      
     </>
   );
 }
