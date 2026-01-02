@@ -10,7 +10,7 @@ function Classes(){
         <>
         <OtherNavbar />
         
-        <OtherHero tabletImg={classesTab} mobileImg={classesMob} desktopImg={classes} />
+        <OtherHero tabletImg={classesTab} mobileImg={classesMob} desktopImg={classes} title={"Our Classes"} subtitle={"Capturing moments of musical joy, growth, and achievement"}/>
         {/* <OtherHero mobileImg={frame1} /> */}
 
        

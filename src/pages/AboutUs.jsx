@@ -10,7 +10,7 @@ function AboutUs(){
         <>
         <OtherNavbar />
         
-        <OtherHero tabletImg={aboutTab} mobileImg={aboutMob} desktopImg={about} />
+        <OtherHero tabletImg={aboutTab} mobileImg={aboutMob} desktopImg={about} title={"About Us"} subtitle={"Capturing moments of musical joy, growth, and achievement"} />
         
 
        

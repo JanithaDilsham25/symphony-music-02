@@ -9,7 +9,7 @@ function ContactUs(){
         <>
         <OtherNavbar />
         
-        <OtherHero tabletImg={contactTab} mobileImg={fram1} desktopImg={fram} />
+        <OtherHero tabletImg={contactTab} mobileImg={fram1} desktopImg={fram} title={"Contact Us"} subtitle={"Capturing moments of musical joy, growth, and achievement"} />
         
 
        

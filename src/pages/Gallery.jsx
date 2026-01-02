@@ -9,7 +9,7 @@ function Gallery(){
          <>
         <OtherNavbar />
         
-        <OtherHero desktopImg={FrameGal} mobileImg={Framegal} tabletImg={galleryTab}/>
+        <OtherHero desktopImg={FrameGal} mobileImg={Framegal} tabletImg={galleryTab} title={"Gallery"} subtitle={"Capturing moments of musical joy, growth, and achievement"} />
         {/* <OtherHero mobileImg={frame1} /> */}
 
        
