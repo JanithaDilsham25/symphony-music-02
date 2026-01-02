@@ -6,7 +6,7 @@ import StoryImg from '../../../assets/StorySectionImg.png';
 function OurStory() {
   return (
    <>
-    <section className='w-full flex justify-center text-center lg:text-left items-center overflow-hidden bg-blue-100'>
+    <section className='w-full flex justify-center text-center lg:text-left items-center overflow-hidden pt-9 pb-9'>
         <div className='xl:w-10/12 w-full flex flex-row xl:justify-center xl:items-center'>
         
             <div className='w-full xl:w-6/12 xl:flex flex flex-col h-full xl:gap-[48px] justify-center items-center xl:items-start'>

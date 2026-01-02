@@ -1,5 +1,6 @@
 import fram  from "../assets/contactus/Frame300.png"
 import fram1  from "../assets/contactus/Frame300mob.png"
+import contactTab  from "../assets/contactus/contactTab.png"
 import OtherNavbar from "../components/header/navBar/OtherNavbar"
 import OtherHero from "../section/otherhero/OtherHero"
 
@@ -8,7 +9,7 @@ function ContactUs(){
         <>
         <OtherNavbar />
         
-        <OtherHero tabletImg={fram} mobileImg={fram1}/>
+        <OtherHero tabletImg={contactTab} mobileImg={fram1} desktopImg={fram} />
         
 
        
