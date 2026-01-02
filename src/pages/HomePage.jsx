@@ -14,8 +14,8 @@ export default function HomePage() {
         <Header />
         <OurStory />
         <ExpertSection />
-        <Student />
-        <UpComingSection />
+        <Student /> 
+         <UpComingSection />
         <div className="md:hidden">
           <UpComingSlide />
         </div>

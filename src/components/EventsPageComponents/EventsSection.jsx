@@ -48,7 +48,7 @@ function EventsSection() {
       </div>
 
       {/* Cards Grid */}
-      <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:w-[1360px] lg:h-[922px]} flex flex-col items-center gap-16">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:w-[1360px] lg:h-[922px] flex flex-col items-center gap-16">
         {filteredEvents.map((event, index) => (
           <EventCard
             key={index}
