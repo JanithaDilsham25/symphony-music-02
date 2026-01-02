@@ -21,8 +21,7 @@ export default function Header() {
           <image href={Vector7} width="1920" height="960" />
           <image
             href={MaskgroupLg}
-
-            width="1925" 
+            width="1925"
             // 1920
             height="960"
             preserveAspectRatio="xMidYMid slice"
