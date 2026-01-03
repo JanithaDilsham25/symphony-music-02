@@ -13,7 +13,7 @@ function Event() {
 
       <OtherHero tabletImg={eventTab} mobileImg={eventMob} desktopImg={event} title={"Events"} subtitle={"Capturing moments of musical joy, growth, and achievement"}/>
       
-
+      
       <EventsSection/>
     </>
   );

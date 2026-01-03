@@ -4,16 +4,16 @@ function GridOverlay() {
   return (
     <div className="pointer-events-none fixed inset-0 z-9999">
       <div className="w-full h-full flex justify-center">
-        <div className="w-full max-w-screen-2xl h-full px-4">
+        <div className="w-full max-w-sc-full h-full px-4">
           {/* Responsive grid */}
           <div className="
             h-full 
-            grid 
+            grid
             grid-cols-4 
             md:grid-cols-8 
             xl:grid-cols-12 
             gap-x-4 
-            xl:gap-x-8
+            xl:gap-x-5
           ">
             {columns.map((_, i) => (
               <div

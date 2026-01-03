@@ -1,69 +1,95 @@
 import React, { useState } from "react";
-import EventCard from "./EventCard";
-import { eventsData } from "./Eventsdata.jsx";  
+import { eventsData } from "./eventsData";
+import EventMobileCard from "./EventMobileCard";
+import EventCardSmall from "./EventCardSmall";
+import EventCardBig from "./EventCardBig";
 
-function EventsSection() {
+export default function EventsSection() {
   const [filter, setFilter] = useState("All");
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
   const today = new Date();
 
-  const filteredEvents =
-    filter === "All"
-      ? eventsData
-      : filter === "Upcoming"
-      ? eventsData.filter((event) => new Date(event.date) > today)
-      : eventsData.filter((event) => new Date(event.date) < today);
+  const filteredEvents = eventsData.filter((event) => {
+    const eventDate = new Date(event.date);
+    if (filter === "All") return true;
+    if (filter === "Upcoming") return eventDate >= today;
+    if (filter === "Past") return eventDate < today;
+    return true;
+  });
 
   return (
-    <div className="w-full flex items-center justify-center">
-        <div className="w-10/12 h-[3082px] bg-green-300  gap-32 flex flex-col items-center">
+    <section className="w-full flex flex-col items-center bg-amber-200 gap-[128px] ">
+      <div className="w-full md:w-full xl:w-10/12 bg-green-200 flex flex-col p-5 items-center md:p-4 xl:p-5">
 
-      {/* Filter Buttons */}
-      <div className="flex   justify-between gap-3 ">
-        <button
-          className={`w-[153px] h-[60px] pt-3 pr-5 pb-3 pl-5 gap-2.5 ${
-            filter === "All" ? " border-b-2 border-[#393939] text-[#393939]" : "text-[#454545]"
-          }`}
-          onClick={() => setFilter("All")}
-        >
-          <span className="w-[113px] h-9 font-medium font-secondary text-[24px] tracking-normal leading-9 space-y-4">All Events</span>
-        </button>
-
-        <button
-          className={`w-[168px] h-[60px] pt-3 pr-5 pb-3 pl-5 gap-2.5 ${
-            filter === "Upcoming" ? " border-b-2 border-[#393939] text-[#393939]" : "text-[#454545]"
-          }`}
-          onClick={() => setFilter("Upcoming")}
-        >
-         <span className="w-32 h-9 font-medium font-secondary text-[24px] tracking-normal leading-9 space-y-4">Up Coming</span> 
-        </button>
-
-        <button
-          className={`w-[163px] h-[60px] pt-3 pr-5 pb-3 pl-5 gap-2.5  ${
-            filter === "Past" ? " border-b-2 border-[#393939] text-[#393939]" : "text-[#454545]"
-          }`}
-          onClick={() => setFilter("Past")}
-        >
-          <span className="w-[123px] h-9 font-medium font-secondary text-[24px] tracking-normal leading-9 space-y-4">Past Event</span >
-        </button>
+      <div></div>  
+      {/* FILTER */}
+      <div className="flex justify-center items-center w-full bg-red-300 md:w-4/8 xl:w-/12 gap-5  md:gap-6 mb-14">
+        {["All", "Upcoming", "Past"].map((type) => (
+          <button
+            key={type}
+            onClick={() => setFilter(type)}
+            className={`h-[60px]  text-[1rem] xl:text-[1.5rem] ${
+              filter === type
+                ? "border-b-2 border-[#393939]"
+                : "text-[#454545]"
+            }`}
+          >
+            {type} Events
+          </button>
+        ))}
       </div>
 
-      {/* Cards Grid */}
-      <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:w-[1360px] lg:h-[922px] flex flex-col items-center gap-16">
-        {filteredEvents.map((event, index) => (
-          <EventCard
-            key={index}
-            pic={event.pic}
-            eventname={event.eventname}
-            discription={event.discription}
-            details={event.details}
+      {/* ================= MOBILE ================= */}
+      <div className="flex flex-col w-full gap-16    md:hidden">
+        {filteredEvents.map((e, i) => (
+          <EventMobileCard key={i} {...e} />
+        ))}
+      </div>
+
+      {/* ================= TABLET (1 CARD + POPUP) ================= */}
+      <div className="hidden md:grid  md:grid-cols-2 md:w-full bg-blue-500 xl:hidden flex-col gap-16">
+        {filteredEvents.map((e, i) => (
+          <EventCardSmall
+            key={i}
+            {...e}
+            onClick={() => setSelectedEvent(e)}
           />
         ))}
       </div>
-    </div>
-    </div>
-  
+
+      {/* ================= DESKTOP (2 CARDS PER ROW) ================= */}
+      <div className="hidden xl:grid xl:grid-cols-2 xl:h-full gap-5 bg-blue-200 ">
+        {filteredEvents.map((e, i) => (
+          <div key={i} className="flex justify-center mb-5">
+            <EventCardBig event={e} />
+          </div>
+        ))}
+      </div>
+
+      {/* ================= TABLET POPUP ================= */}
+      {selectedEvent && (
+        <div
+          className="fixed inset-0 bg-black/40 flex items-center justify-center z-50"
+          onClick={() => setSelectedEvent(null)}
+        >
+          <div
+            className="relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedEvent(null)}
+              className="absolute -top-4 -right-4 bg-white rounded-full px-3 py-1 text-lg"
+            >
+              ✕
+            </button>
+
+            <EventCardBig event={selectedEvent} />
+          </div>
+        </div>
+      )}
+      </div>
+
+    </section>
   );
 }
-
-export default EventsSection;
