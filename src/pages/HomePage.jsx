@@ -10,18 +10,15 @@ export default function HomePage() {
   return (
     <>
       <div className="w-full h-full flex flex-col">
-        
         <Header />
         <OurStory />
         <ExpertSection />
-        <Student /> 
-         <UpComingSection />
+        <Student />
+        <UpComingSection />
         <div className="md:hidden">
           <UpComingSlide />
         </div>
       </div>
-
-      
     </>
   );
 }
