@@ -35,7 +35,7 @@ function EventCard({pic, eventname, discription ,details}) {
     // </div>
 
 
-      <div className="  lg:hidden w-[398px] h-[607.18px] bg-white border border-[#454545] rounded-[14.74px] gap-[19.65px] p-[9.83px] gap-[19.65px]  text-left">
+      <div className="  xl:hidden w-[398px] h-[607.18px] bg-white border border-[#454545] rounded-[14.74px] gap-[19.65px] p-[9.83px] gap-[19.65px]  text-left">
       <div className='w-[378.35px] h-[207.6px] gap-[6.14px]'>
         <img src={pic} alt='Event image' className="w-[378.35px] h-[207.6px] rounded-[14.41px]"/>
       </div>

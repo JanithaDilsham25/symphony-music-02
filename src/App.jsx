@@ -8,7 +8,7 @@ import ContactUs from "./pages/ContactUs";
 import Classes from "./pages/Classes";
 import Gallery from "./pages/Gallery";
 import Event from "./pages/Event";
-import EventPage from "./pages/EventPage";
+
 
 function App() {
   return (
