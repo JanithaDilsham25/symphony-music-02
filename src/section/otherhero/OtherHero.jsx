@@ -5,19 +5,38 @@ function OtherHero(props) {
     <>
       {/* Mobile hero */}
       <div
-        className="block sm:hidden w-full h-[100vh] bg-contain bg-no-repeat"
+        className="block sm:hidden w-full h-screen bg-contain bg-no-repeat"
         style={{
           backgroundImage: `url(${props.mobileImg})`,
         }}
       ></div>
 
-      {/* Tablet/Desktop hero */}
+      {/* Tablet hero */}
       <div
-        className="hidden sm:block w-full h-[100vh] bg-contain bg-no-repeat"
+        className="hidden sm:inline-flex lg:hidden w-full h-screen bg-contain bg-no-repeat justify-center items-start"
         style={{
           backgroundImage: `url(${props.tabletImg})`, backgroundSize: "100% 120vh"
         }}
-      ></div>
+      >
+
+        <div className="flex flex-col gap-13 justify-center items-center">
+          <p className="text-[6.8rem] font-primary text-white pt-30">{props.title}</p>
+          <p className="text-[1.5rem] text-white">{props.subtitle}</p>
+        </div>
+      </div>
+
+      {/* /Desktop hero */}
+      <div
+        className="hidden lg:inline-flex w-full h-screen bg-contain bg-no-repeat justify-center items-start"
+        style={{
+          backgroundImage: `url(${props.desktopImg})`, backgroundSize: "100% 120vh"
+        }}
+      >
+        <div className="flex flex-col gap-13 justify-center items-center">
+          <p className="text-[6.8rem] font-primary text-white pt-30">{props.title}</p>
+          <p className="text-[1.5rem] text-white">{props.subtitle}</p>
+        </div>
+      </div>
 
       
     </>

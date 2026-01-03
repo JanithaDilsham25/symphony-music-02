@@ -1,5 +1,5 @@
 
-import basic from "../../../assets/homePage/group.jpg";
+import basic from "../../../assets/homePage/group.png";
 import icon1 from "../../../assets/icons/Icon1.png"
 import icon2 from "../../../assets/icons/Icon2.png"
 
