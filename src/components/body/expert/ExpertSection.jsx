@@ -33,8 +33,8 @@ function ExpertSection() {
   ];
 
   return (
-    <section className="w-full flex justify-center  md:p-3 mt-5 mb-15 xl:mb-20">
-      <div className="flex flex-col w-full">
+    <section className="w-12/12 bg-green-500 flex justify-center  md:p-3 xl:p-0 mt-5 mb-15 xl:mb-20 ">
+      <div className="flex flex-col w-10/12 xl:justify-center xl:items-center bg-blue-700">
         {/* MOBILE */}
         <div className="md:hidden w-full p-5">
           <Swiper
@@ -52,7 +52,7 @@ function ExpertSection() {
         </div>
 
         {/* TABLET */}
-        <div className="hidden md:grid xl:hidden grid-cols-8 gap-10">
+        <div className="hidden md:grid xl:hidden grid-cols-8 gap-10 ">
           <div className="col-span-4">
             <Card {...cards[0]} />
           </div>
@@ -72,40 +72,43 @@ function ExpertSection() {
           <div className="col-span-2" />
         </div>
 
-        {/* ================= DESKTOP ================= */}
-        <div className="hidden xl:grid grid-cols-12 gap-5">
+       {/* ================= DESKTOP ================= */}
+<div className="hidden xl:flex w-full flex-col gap-16 justify-center items-center">
 
-          {/* ===== TOP ROW =====
+  {/* ================= TOP ROW ================= */}
+  <div className="w-full flex justify-center bg-blue-400">
+    <div className="flex  justify-center gap-5">
+      
+      <div className="w-4/12 h-[256px] flex justify-center">
+        <Card {...cards[0]} />
+      </div>
 
-          {/* left spacing */}
-          <div className="col-span-2" />
+      <div className="w-4/12 h-[256px] flex justify-center">
+        <Card {...cards[1]} />
+      </div>
 
-          {/* card 1 */}
-          <div className="col-span-4 h-[256px]">
-            <Card {...cards[0]} />
-          </div>
-          {/* card 2 */}
-          <div className="col-span-4 h-[256px]">
-            <Card {...cards[1]} />
-          </div>
+    </div>
+  </div>
 
-          {/* right spacing */}
-          <div className="col-span-2" />
+  {/* ================= BOTTOM ROW ================= */}
+<div className="w-10/12 flex items-center justify-between gap-5 bg-green-800">
 
-          {/* ===== BOTTOM ROW ===== */}
+  <div className="w-4/12 h-[256px] flex justify-center">
+    <Card {...cards[2]} />
+  </div>
 
-          <div className="col-span-4 h-[256px]">
-            <Card {...cards[2]} />
-          </div>
+  <div className="w-4/12 h-[256px] flex justify-center">
+    <Card {...cards[3]} />
+  </div>
 
-          <div className="col-span-4 h-[256px]">
-            <Card {...cards[3]} />
-          </div>
+  <div className="w-4/12 h-[256px] flex justify-center">
+    <Card {...cards[4]} />
+  </div>
 
-          <div className="col-span-4 h-[256px]">
-            <Card {...cards[4]} />
-          </div>
-        </div>
+</div>
+
+</div>
+
       </div>
     </section>
   );
