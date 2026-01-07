@@ -6,8 +6,8 @@ import { GrLocation } from "react-icons/gr";
 
 export default function ClassCart({ image, grade, date, time, location }) {
   return (
-    <div className="relative w-77.5 md:w-80 xl:w-100 flex flex-col items-center p-4 gap-4 rounded-[7.76px] bg-white border border-black">
-      <div className="relative w-full h-52 rounded-xl overflow-hidden ">
+    <div className="relative w-77.5 md:w-80 xl:w-8/12 flex flex-col items-center p-4 gap-4 rounded-[7.76px] bg-red-100 border border-black">
+      <div className="relative w-full h-42 rounded-xl overflow-hidden ">
         <img
           src={image}
           alt="Instrument"
@@ -20,27 +20,27 @@ export default function ClassCart({ image, grade, date, time, location }) {
       </div>
 
       <div className="w-full  p-2 rounded-md flex flex-col items-start gap-3">
-        <h2 className="font-inter font-semibold text-[22px] text-[#272A30] leading-7">
+        <h2 className="font-inter font-semibold text-[18px] text-[#272A30] leading-7">
           {grade}
         </h2>
         <div className="w-full gap-1.5 flex flex-col ">
           <div className="flex items-center gap-3">
             <FaRegCalendar className="text-yellow-500 w-5 h-5" />
-            <span className="font-inter font-normal text-[20px] flex items-center">
+            <span className="font-inter font-normal text-[16px] flex items-center">
               {date}
             </span>
           </div>
 
           <div className="flex items-center gap-3">
             <FaRegClock className="text-yellow-500 w-5 h-5" />
-            <span className="font-inter font-normal text-[20px] flex items-center">
+            <span className="font-inter font-normal text-[16px] flex items-center">
               {time}
             </span>
           </div>
 
           <div className="flex items-center gap-3">
             <GrLocation className="text-yellow-500 w-5 h-5 " />
-            <span className="font-inter font-normal text-[20px] flex items-center">
+            <span className="font-inter font-normal text-[16px] flex items-center">
               {location}
             </span>
           </div>
@@ -57,7 +57,7 @@ export default function ClassCart({ image, grade, date, time, location }) {
           <span className="font-inter font-medium text-[18px] leading-[20.78px] tracking-[0px] text-black xl:hidden">
             Read More
           </span>
-          <span className=" hidden xl:inline font-inter font-medium text-[22px] leading-9 text-black">
+          <span className=" hidden xl:inline font-inter font-medium text-[14px] leading-9 text-black">
             View details
           </span>
         </button>

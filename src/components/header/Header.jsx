@@ -66,7 +66,7 @@ export default function Header() {
         <Navbar />
       </div>
       <div className="absolute inset-0 z-20 flex flex-col  items-center gap-16 sm:gap-12 xl:gap-11 2xl:gap-16 md:gap-10  lg:gap-11   top-[18vh] md:top-[15vh] ">
-        <div className="w-5/16 md:w-2/12 xl:w-9/72    ">
+        <div className="w-5/16 md:w-2/12 xl:w-7/72    ">
           <img src={Layer1} alt="Icon" className="w-full h-auto" />
         </div>
         {/* Hero Text*/}
@@ -75,7 +75,7 @@ export default function Header() {
           <div className="flex justify-center w-full ">
             <h1
               className="font-primary font-normal  text-white text-center text-[48px] sm:text-[58px] leading-12.5 drop-shadow-[0_0.74px_5.57px_#00000040]
-                         md:text-[62px] md:leading-16 md:drop-shadow-[0_0.95px_7.1px_#00000040] lg:text-[75px] lg:leading-15 xl:text-[90px] xl:leading-20 2xl:text-[110px] 2xl:leading-25 xl:drop-shadow-[0_1.78px_13.38px_#00000040]
+                         md:text-[62px] md:leading-16 md:drop-shadow-[0_0.95px_7.1px_#00000040] lg:text-[75px] lg:leading-15 xl:text-[72px] xl:leading-20 2xl:text-[110px] 2xl:leading-25 xl:drop-shadow-[0_1.78px_13.38px_#00000040]
  "
             >
               Start Your Musical <br />
@@ -85,16 +85,16 @@ export default function Header() {
 
           <div className="w-full  z-20 flex justify-center">
             <div className="text-center md:hidden">
-              <p className="text-white font-secondary text-[18px] leading-tight">
+              <p className="text-red font-secondary text-[10px] leading-tight">
                 Learn from professional instructors in a
               </p>
-              <p className="text-white font-secondary text-[18px] leading-tight">
+              <p className="text-white font-secondary text-[10px] leading-tight">
                 supportive environment
               </p>
             </div>
 
             {/* md and up: 1 line */}
-            <p className="hidden md:block text-white font-secondary tracking-wide text-center text-[18px] md:leading-6 xl:leading-7.5">
+            <p className="hidden md:block text-white font-secondary tracking-wide text-center text-[16px] md:leading-6 xl:leading-7.5">
               Learn from professional instructors in a supportive environment
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function Header() {
              xl:rounded-2 lg:border xl:px-5 xl:py-3 
             self-center"
         >
-          <span className="text-white font-secondary font-medium text-[16px] leading-5 mb:text-[13px] mb:leading-[20] xl:text-[22px] 2xl:text-[24px] 2xl:leading-9">
+          <span className="text-white font-secondary font-medium text-[12px] leading-5 mb:text-[13px] mb:leading-[20] xl:text-[16px] 2xl:text-[24px] 2xl:leading-9">
             Explore Classes
           </span>
         </button>

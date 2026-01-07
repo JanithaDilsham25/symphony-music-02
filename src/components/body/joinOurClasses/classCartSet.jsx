@@ -53,11 +53,27 @@ export default function ClassCartSet() {
       time: "6:00 PM - 9:00 PM",
       location: "Harmony Concert Hall",
     },
+    {
+      id: 6,
+      image: Keyboard,
+      grade: "Guitar Class - Grade 6",
+      date: "December 15, 2025",
+      time: "6:00 PM - 9:00 PM",
+      location: "Harmony Concert Hall",
+    },
+    {
+      id: 7,
+      image: Keyboard,
+      grade: "Guitar Class - Grade 6",
+      date: "December 15, 2025",
+      time: "6:00 PM - 9:00 PM",
+      location: "Harmony Concert Hall",
+    },
   ];
 
   return (
     <section className="relative w-full py-12 bg-[#002B42]">
-      <h2 className="text-center text-white font-primary font-normal text-[36px] sm:text-[42px] md:text-[64px]  xl:text-[70px] 2xl:text-[72px] mb-4 sm:mb-5">
+      <h2 className="text-center text-white font-primary font-normal text-[36px] sm:text-[42px] md:text-[64px]  xl:text-[50px] 2xl:text-[72px] mb-4 sm:mb-5">
         Join With Our Classes
       </h2>
 

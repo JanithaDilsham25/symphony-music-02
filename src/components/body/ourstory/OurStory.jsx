@@ -6,7 +6,7 @@ import StoryImg from '../../../assets/StorySectionImg.png';
 function OurStory() {
   return (
    <>
-    <section className='w-full flex justify-center text-center lg:text-left items-center overflow-hidden pt-9 pb-9 mb-8 md:p-5 p-5'>
+    <section className='w-full flex justify-center text-center lg:text-left items-center overflow-hidden pt-9 pb-9 mb-8 md:p-5 p-5 mt-10'>
         <div className='xl:w-9/12 w-full flex flex-row xl:justify-center xl:items-center lg:ml-5  pb-20'>
         
             <div className='w-full xl:w-6/12 xl:flex flex flex-col h-full xl:gap-[48px] justify-center items-center xl:items-start'>
@@ -33,7 +33,7 @@ function OurStory() {
                   className="
                     text-[1rem]
                     md:text-[1.125rem]
-                    xl:text-[1.25rem]
+                    xl:text-[1rem]
                     xl:leading-9
                     md:leading-7
                     text-[#454545]
