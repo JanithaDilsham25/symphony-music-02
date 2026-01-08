@@ -93,7 +93,7 @@ export default function ClassCartSet() {
             850: { slidesPerView: 2.5, centeredSlides: false },
             1024: { slidesPerView: 3, centeredSlides: false },
             1280: { slidesPerView: 3, centeredSlides: false },
-            1536: { slidesPerView: 3.5, centeredSlides: false },
+            1536: { slidesPerView: 3, centeredSlides: false },
           }}
           slideActiveClass="active-slide"
         >
