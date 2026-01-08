@@ -1,0 +1,9 @@
+.swiper-slide .swiper-scale-wrapper {
+  transform: scale(0.9);
+  transition: transform 0.5s ease;
+}
+
+.swiper-slide-active .swiper-scale-wrapper {
+  transform: scale(1.08);
+  z-index: 10;
+}
