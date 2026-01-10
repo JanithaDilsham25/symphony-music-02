@@ -33,7 +33,7 @@ function ExpertSection() {
   ];
 
   return (
-    <section className="w-12/12 xl:h-[700px] bg-green-500 flex justify-center xl:items-center  md:p-3 xl:p-0 mt-5 mb-15 xl:mb-20 ">
+    <section className="w-12/12 xl:h-[600px] bg-green-500 flex justify-center xl:items-center  md:p-3 xl:p-0 mt-5 mb-15 xl:mb-20 ">
       <div className="xl:h-fit flex flex-col w-10/12 xl:justify-center xl:items-center bg-blue-700">
         {/* MOBILE */}
         <div className="md:hidden w-full p-5">
@@ -73,17 +73,17 @@ function ExpertSection() {
         </div>
 
        {/* ================= DESKTOP ================= */}
-<div className="w-full h-fit  hidden xl:flex flex-col justify-center items-center gap-10 bg-amber-300">
+<div className="w-full h-fit  hidden xl:flex flex-col justify-center  items-center gap-5 bg-amber-300">
 
   {/* ================= TOP ROW ================= */}
  
-    <div className="w-7/12 h-fit flex felx-row gap-5">
+    <div className="w-7/12 h-fit flex felx-row gap-5 bg-blue-400">
       
-      <div className="w-4/8 h-[250px] border border-black rounded-3xl">
+      <div className=" h-[220px] border border-black rounded-3xl">
         <Card {...cards[0]} />
       </div>
 
-      <div className="w-4/8 h-[250px] border border-black rounded-3xl">
+      <div className=" h-[220px] border border-black rounded-3xl">
         <Card {...cards[1]} />
       </div>
 
@@ -91,17 +91,17 @@ function ExpertSection() {
   </div>
 
   {/* ================= BOTTOM ROW ================= */}
-<div className="w-11/12 h-fit flex felx-row gap-5">
+<div className="w-11/12 h-fit flex felx-row gap-5 bg-blue-300">
 
-  <div className="w-4/8 h-[250px] border border-black rounded-3xl">
+  <div className="h-[220px] border border-black rounded-3xl">
     <Card {...cards[2]} />
   </div>
 
-  <div className="w-4/8 h-[250px] border border-black rounded-3xl">
+  <div className="h-[220px] border border-black rounded-3xl">
     <Card {...cards[3]} />
   </div>
 
-  <div className="w-4/8 h-[250px] border border-black rounded-3xl">
+  <div className=" h-[220px] border border-black rounded-3xl">
     <Card {...cards[4]} />
   </div>
 
