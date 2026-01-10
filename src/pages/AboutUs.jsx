@@ -7,7 +7,7 @@ import about from "../assets/aboutus/about.png"
 import StaffSection from "../components/body/meetOurStaff/staffSection"
 import AboutOurStory from "../components/aboutpage(our story)/AboutOurStory"
 import PrinciplaMessage from "../components/body/principleMessage/principlaMessage"
-
+import Footer from "../section/Footer";
 function AboutUs(){
     return(
         <>
@@ -18,7 +18,7 @@ function AboutUs(){
         <AboutOurStory />
         <PrinciplaMessage />
         <StaffSection />
-       
+        <Footer />
         </>
     )
 }

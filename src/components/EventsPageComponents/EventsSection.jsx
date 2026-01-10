@@ -19,23 +19,24 @@ export default function EventsSection() {
   });
 
   return (
-    <section className="w-full flex flex-col items-center gap-[128px] bg-amber-200">
-      <div className="w-full md:w-full xl:w-9/12 flex flex-col p-5 items-center md:p-4 xl:p-5 bg-green-200">
+    <section className="w-full flex flex-col items-center justify-center ">
+      <div className="w-full md:w-full xl:w-9/12 flex flex-col p-5 items-center justify-center md:p-4 xl:p-0 ">
 
        
       {/* FILTER */}
-      <div className="flex justify-center items-center w-full md:w-4/8 xl:w-/12 gap-5  md:gap-6 mb-14 ">
-        {["All", "Upcoming", "Past"].map((type) => (
+      <div className="flex justify-center items-center w-full md:w-4/8 xl:w-5/12 gap-5 md:gap-6 mb-14 ">
+        {["All Event", "Upcoming", "Past Event"].map((type) => (
           <button
             key={type}
             onClick={() => setFilter(type)}
-            className={`h-[60px]  text-[1rem] xl:text-[1.5rem] ${
+            className={`w-5/12 text-[1rem] xl:text-[1rem] ${
               filter === type
                 ? "border-b-2 border-[#393939]"
                 : "text-[#454545]"
             }`}
           >
-            {type} Events
+           
+            {type} 
           </button>
         ))}
       </div>
@@ -59,13 +60,33 @@ export default function EventsSection() {
       </div>
 
       {/* ================= DESKTOP (2 CARDS PER ROW) ================= */}
-      <div className="hidden xl:grid xl:grid-cols-2  bg-amber-600">
-        {filteredEvents.map((e, i) => (
-          <div key={i} className="flex justify-center mb-5 bg-amber-950">
-            <EventCardBig event={e} />
-          </div>
-        ))}
-      </div>
+  <div className="hidden xl:grid xl:grid-cols-12 gap-y-8 ">
+  {filteredEvents.reduce((rows, event, index) => {
+    if (index % 2 === 0) {
+      rows.push(filteredEvents.slice(index, index + 2));
+    }
+    return rows;
+  }, []).map((row, rowIndex) => (
+    <div key={rowIndex} className="col-span-12 grid grid-cols-12 gap-8">
+      
+      {/* LEFT SPACE */}
+      <div className="col-span-1" />
+
+      {/* CARDS */}
+      {row.map((event, i) => (
+        <div key={i} className="col-span-5">
+          <EventCardBig event={event} />
+        </div>
+      ))}
+
+      {/* RIGHT SPACE */}
+      <div className="col-span-1" />
+
+    </div>
+  ))}
+</div>
+
+
 
       {/* ================= TABLET POPUP ================= */}
       {selectedEvent && (
