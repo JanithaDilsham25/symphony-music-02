@@ -6,14 +6,14 @@ import StoryImg from '../../../assets/StorySectionImg.png';
 function OurStory() {
   return (
    <>
-    <section className='w-full flex justify-center text-center lg:text-left items-center overflow-hidden pt-9 pb-9 mb-8 md:p-5 p-5 mt-20'>
+    <section className='w-full flex justify-center text-center xl:text-left items-center overflow-hidden pt-9 pb-9 mb-8 md:p-5 p-5 mt-20'>
         <div className='xl:w-9/12 w-full flex flex-row xl:justify-center xl:items-center lg:ml-5  pb-20'>
         
-            <div className='w-full xl:w-6/12 xl:flex flex flex-col h-full xl:gap-[48px] justify-center items-center xl:items-start'>
+            <div className='w-full xl:w-6/12 xl:flex flex flex-col h-full xl:gap-[30px] justify-center items-center xl:items-start'>
               
               <div className='w-full md:w-1/2 xl:w-6/12 flex flex-col justify-center items-center'>
                 
-                {/* ✅ FIXED HERE */}
+              
                 <div className='flex justify-center items-center xl:justify-start xl:items-start text-center xl:text-left w-full'>
                   <Topic title="Our Story" />
                 </div>
@@ -34,7 +34,7 @@ function OurStory() {
                     text-[1rem]
                     md:text-[1.125rem]
                     xl:text-[1rem]
-                    xl:leading-9
+                    xl:leading-8
                     md:leading-7
                     text-[#454545]
                     font-secondary
@@ -47,7 +47,8 @@ function OurStory() {
                   make quality music education accessible to everyone. What started as
                   a small studio with just three teachers has grown into one of the
                   region's premier music institutions.
-                  <br /><br />
+                  <br />
+                  <div className='w-full h-4 hidden xl:flex'></div>
                   We believe that music is a universal language that transcends
                   boundaries and enriches lives. Our dedicated team of professional
                   musicians and educators work tirelessly to nurture talent, build
