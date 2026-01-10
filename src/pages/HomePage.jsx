@@ -19,9 +19,10 @@ export default function HomePage() {
           <OurStory />
         </Reveal>
 
-        {/* <ExpertSection /> */}
+       
         <Reveal direction="right">
-          <Story />
+           <ExpertSection />
+          {/* <Story /> */}
         </Reveal>
 
         <Reveal>
