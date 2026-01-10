@@ -33,8 +33,8 @@ function ExpertSection() {
   ];
 
   return (
-    <section className="w-12/12 flex justify-center  md:p-3 xl:p-0 mt-5 mb-15 xl:mb-20 ">
-      <div className="flex flex-col w-10/12 xl:justify-center xl:items-center">
+    <section className="w-12/12 xl:h-[550px]  flex justify-center xl:items-center  md:p-3 xl:p-0 mt-5 mb-15 xl:mb-20 ">
+      <div className="xl:h-fit flex flex-col w-10/12 xl:justify-center xl:items-center ">
         {/* MOBILE */}
         <div className="md:hidden w-full p-5">
           <Swiper
@@ -73,35 +73,35 @@ function ExpertSection() {
         </div>
 
        {/* ================= DESKTOP ================= */}
-<div className="hidden xl:flex w-full flex-col gap-16 justify-center items-center">
+<div className="w-full h-fit  hidden xl:flex flex-col justify-center  items-center gap-5">
 
   {/* ================= TOP ROW ================= */}
-  <div className="w-full flex justify-center">
-    <div className="flex  justify-center gap-5">
+ 
+    <div className="w-5/8 h-fit flex felx-row gap-5 ">
       
-      <div className="w-4/12 h-[256px] flex justify-center">
+      <div className=" h-[220px] ">
         <Card {...cards[0]} />
       </div>
 
-      <div className="w-4/12 h-[256px] flex justify-center">
+      <div className=" h-[220px] ">
         <Card {...cards[1]} />
       </div>
 
-    </div>
+  
   </div>
 
   {/* ================= BOTTOM ROW ================= */}
-<div className="w-11/12 flex items-center justify-between gap-3">
+<div className="w-11/12 h-fit flex felx-row gap-5 ">
 
-  <div className="w-6/12 h-[256px] flex justify-center">
+  <div className="h-[220px]">
     <Card {...cards[2]} />
   </div>
 
-  <div className="w-6/12 h-[256px] flex justify-center">
+  <div className="h-[220px] ">
     <Card {...cards[3]} />
   </div>
 
-  <div className="w-6/12 h-[256px] flex justify-center">
+  <div className=" h-[220px] ">
     <Card {...cards[4]} />
   </div>
 
@@ -109,7 +109,8 @@ function ExpertSection() {
 
 </div>
 
-      </div>
+</div>
+
     </section>
   );
 }

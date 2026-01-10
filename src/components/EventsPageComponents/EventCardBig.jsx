@@ -4,7 +4,7 @@ import EventDetailsItem from "./EventDetailsItem";
 export default function EventCardBig({ event }) {
   return (
 
-         <div className="md:w-7/8 xl:w-9/12 border rounded-[14.74px] xl:rounded-3xl p-4 xl:p-6 bg-white">
+         <div className="md:w-7/8 xl:w-10/12 border rounded-[14.74px] xl:rounded-3xl p-4 xl:p-6 bg-white">
       <img
         src={event.pic}
         className="w-full xl:max-h-[340px] md:h-[275px] object-cover rounded-[14.74px] xl:rounded-2xl"
