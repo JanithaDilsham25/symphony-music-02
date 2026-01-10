@@ -77,7 +77,7 @@ function ExpertSection() {
 
   {/* ================= TOP ROW ================= */}
  
-    <div className="w-7/12 h-fit flex felx-row gap-5 bg-blue-400">
+    <div className="w-5/8 h-fit flex felx-row gap-5 bg-blue-400 ">
       
       <div className=" h-[220px] border border-black rounded-3xl">
         <Card {...cards[0]} />
