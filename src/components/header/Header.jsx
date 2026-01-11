@@ -123,14 +123,38 @@ import logo from "../../assets/header/logo.png"
 import Navbar from "./navBar/Navbar";
 import Button1 from "../../Buttons/homePage/Button1";
 import HomePageBtn from "../../buttons/homepage/HomePageBtn";
+import maskTab from "../../assets/header/maskTab.png";
 
 function Header() {
   return (
     <>
       {/* Mobile  */}
       {/* Tablet  */}
+      <section className="hidden sm:inline-flex xl:hidden w-full aspect-[1.94/1.4] justify-center items-center bg-green-400">
+        <div
+          className="w-full h-full  bg-no-repeat bg-contain overflow-hidden flex flex-col justify-start items-center"
+          style={{
+            backgroundImage: `url(${maskTab})`,
+            backgroundSize: "100% auto",
+          }}
+        >
+          <Navbar />
+          <div
+            className="w-30 h-30 bg-cover bg-center bg-no-repeat m-5"
+            style={{
+              backgroundImage: `url(${logo})`,
+              backgroundSize: "100% auto",
+            }}
+          ></div>
+
+          <div className="font-primary text-5xl text-white m-5">Start Your Musical</div>
+          <div className="font-primary text-5xl text-white">Journey Today</div>
+          <HomePageBtn />
+        </div>
+      </section>
+
       {/* Web */}
-      <section className="w-full h-screen flex justify-center items-center">
+      <section className="hidden xl:inline-flex w-full h-screen justify-center items-center">
         <div
           className="w-full h-[103vh] absolute z-1 top-0 bg-no-repeat bg-contain overflow-hidden flex flex-col justify-start items-center"
           style={{

@@ -25,7 +25,7 @@ export default function UpComingSection() {
 
   return (
     <>
-      <section className="w-full h-250 flex flex-col justify-center items-center">
+      <section className="w-full h-225 flex flex-col justify-center items-center">
         
         <div className="w-10/12 h-full mt-5 flex flex-col justify-start items-center gap-5">
           <div className="flex mt-10">
