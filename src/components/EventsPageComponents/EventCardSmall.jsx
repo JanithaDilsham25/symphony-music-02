@@ -1,5 +1,4 @@
 import React from "react";
-import EventDetailsItem from "./EventDetailsItem";
 
 export default function EventCardSmall({
   pic,
@@ -11,23 +10,22 @@ export default function EventCardSmall({
   return (
     <div
       onClick={onClick}
-      className="cursor-pointer  bg-white border rounded-2xl p-3"
+      className="cursor-pointer bg-white border border-[#454545]/50 rounded-[12px] p-3"
     >
-      <img src={pic} className="w-full h-[200px] object-cover rounded-xl" />
+      <img
+        src={pic}
+        className="w-full h-[200px] object-cover rounded-xl"
+        alt=""
+      />
 
       <div className="mt-4 flex flex-col gap-3">
-        <h3 className="text-[1.25rem] font-semibold">{eventname}</h3>
-        <p className="text-[1rem]">{discription}</p>
+        <h3 className="text-[1.125rem] font-semibold text-[#454545]">
+          {eventname}
+        </h3>
 
-        {/* <div className="flex flex-col gap-2">
-          {details.slice(0, 3).map((item, i) => (
-            <EventDetailsItem key={i} {...item} />
-          ))}
-        </div>
-
-        <button className="mt-2 border rounded-md py-2 text-[14px]">
-          Read More
-        </button> */}
+        <p className="text-[0.875rem] text-[#454545]">
+          {discription}
+        </p>
       </div>
     </div>
   );

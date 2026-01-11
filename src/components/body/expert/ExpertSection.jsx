@@ -72,45 +72,36 @@ function ExpertSection() {
           <div className="col-span-2" />
         </div>
 
-       {/* ================= DESKTOP ================= */}
-<div className="w-full h-fit  hidden xl:flex flex-col justify-center  items-center gap-5">
+        {/* ================= DESKTOP ================= */}
+        <div className="w-full h-fit  hidden xl:flex flex-col justify-center  items-center gap-5">
+          {/* ================= TOP ROW ================= */}
 
-  {/* ================= TOP ROW ================= */}
- 
-    <div className="w-5/8 h-fit flex felx-row gap-5 ">
-      
-      <div className=" h-[220px] ">
-        <Card {...cards[0]} />
+          <div className="w-5/8 h-fit flex felx-row gap-5 ">
+            <div className=" h-[220px] ">
+              <Card {...cards[0]} />
+            </div>
+
+            <div className=" h-[220px] ">
+              <Card {...cards[1]} />
+            </div>
+          </div>
+
+          {/* ================= BOTTOM ROW ================= */}
+          <div className="w-11/12 h-fit flex felx-row gap-5 ">
+            <div className="h-[220px]">
+              <Card {...cards[2]} />
+            </div>
+
+            <div className="h-[220px] ">
+              <Card {...cards[3]} />
+            </div>
+
+            <div className=" h-[220px] ">
+              <Card {...cards[4]} />
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className=" h-[220px] ">
-        <Card {...cards[1]} />
-      </div>
-
-  
-  </div>
-
-  {/* ================= BOTTOM ROW ================= */}
-<div className="w-11/12 h-fit flex felx-row gap-5 ">
-
-  <div className="h-[220px]">
-    <Card {...cards[2]} />
-  </div>
-
-  <div className="h-[220px] ">
-    <Card {...cards[3]} />
-  </div>
-
-  <div className=" h-[220px] ">
-    <Card {...cards[4]} />
-  </div>
-
-</div>
-
-</div>
-
-</div>
-
     </section>
   );
 }
