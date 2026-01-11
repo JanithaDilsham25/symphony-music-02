@@ -6,7 +6,7 @@ import man from "../../../assets/topStudent/man.png";
 export default function LeftTopStudent() {
   return(
     <>
-      <div className="md:w-[41vw] w-[92vw] aspect-[1.43] relative bg-amber-10 sm:scale-90 md:scale-110 lg:scale-100">
+      <div className="md:w-[41vw] w-[92vw] aspect-[1.43] relative bg-amber-10  scale-90 sm:scale-90 md:scale-110 lg:scale-90">
         <div className="md:w-[38vw] w-[85vw]  aspect-[2.6] bg-[#FFE999CC] absolute bottom-0 right-0 rounded-[24px] flex flex-col justify-center items-end border-primary border-2">
 
             <div className="md:w-[20vw] w-[41vw]  flex justify-center items-center">
