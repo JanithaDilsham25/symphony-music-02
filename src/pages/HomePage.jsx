@@ -38,15 +38,21 @@ export default function HomePage() {
             <Reveal>
               <UpComingSection />
             </Reveal>
+
+            <div className="sm:hidden">
+              <Reveal>
+                <UpComingSlide />
+              </Reveal>
+            </div>
             
           </div>
         
 
-        {/* <Reveal>
+        <Reveal>
           <div className="md:hidden">
             <UpComingSlide />
           </div>
-        </Reveal> */}
+        </Reveal>
         <Footer />
       </div>
     </>

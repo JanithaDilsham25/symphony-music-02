@@ -9,7 +9,7 @@ export default function StaffSection() {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-30 xl:mb-20">
       {/* TITLE */}
       <div className="flex justify-center">
         <Topic
@@ -38,8 +38,8 @@ export default function StaffSection() {
           md:pt-[64px]
           pt-[24px]
           mx-auto
-          xl:max-w-[1327.94px]
-          lg:max-w-[1100px]
+          xl:max-w-9/12
+          lg:max-w-[1327.94px]
           md:max-w-[800px]
           justify-items-center
           md:px-6

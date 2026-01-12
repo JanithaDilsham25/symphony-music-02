@@ -8,13 +8,14 @@ import StaffSection from "../components/body/meetOurStaff/staffSection"
 import AboutOurStory from "../components/aboutpage(our story)/AboutOurStory"
 import PrinciplaMessage from "../components/body/principleMessage/principlaMessage"
 import Footer from "../section/Footer";
+import AchievementCartSet from "../components/body/achievementcarts/achievementCartSet"
 function AboutUs(){
     return(
         <>
         <OtherNavbar />
         
-        <OtherHero tabletImg={aboutTab} mobileImg={aboutMob} desktopImg={about} title={"About Us"} subtitle={"Capturing moments of musical joy, growth, and achievement"} />
-        
+        <OtherHero tabletImg={aboutTab} mobileImg={aboutMob} desktopImg={about} title={"About Harmony"} subtitle={"Capturing moments of musical joy, growth, and achievement"} />
+        {/* <AchievementCartSet /> */}
         <AboutOurStory />
         <PrinciplaMessage />
         <StaffSection />
