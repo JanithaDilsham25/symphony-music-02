@@ -1,18 +1,24 @@
-// src/components/GridOverlay.jsx
 function GridOverlay() {
-  // We don't need real content, just columns
-  const cols = Array.from({ length: 12 }, (_, i) => i); // max (desktop) count
+  const columns = Array.from({ length: 12 }); // reusable for all breakpoints
 
   return (
-    <div className="fixed inset-0 z-100 pointer-events-none">
-      {/* page width container */}
+    <div className="pointer-events-none fixed inset-0 z-9999">
       <div className="w-full h-full flex justify-center">
-        <div className="w-full h-full max-w-6xl px-4">
-          <div className="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-12 h-full gap-x-2">
-            {cols.map((i) => (
+        <div className="w-full max-w-6xl h-full">
+          {/* Responsive grid */}
+          <div className="
+            h-full 
+            grid
+            grid-cols-4 
+            md:grid-cols-8 
+            xl:grid-cols-12 
+            gap-x-4 
+            xl:gap-x-6
+          ">
+            {columns.map((_, i) => (
               <div
                 key={i}
-                className="bg-pink-300/50"
+                className="bg-red-300/20"
               />
             ))}
           </div>
