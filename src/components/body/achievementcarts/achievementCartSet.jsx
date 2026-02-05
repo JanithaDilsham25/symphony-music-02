@@ -1,7 +1,7 @@
 import iconStudent from "/src/assets/achievementcart/IconStudent.png";
-import iconInstrument from "../../../assets/achievementcart/iconInstrument.png";
-import iconAward from "../../../assets/achievementcart/iconAward.png";
-import iconExcellence from "../../../assets/achievementcart/iconExcellence.png";
+import iconInstrument from "../../../assets/achievementcart/IconInstrument.png";
+import iconAward from "../../../assets/achievementcart/IconAward.png";
+import iconExcellence from "../../../assets/achievementcart/IconExcellence.png";
 import AchievementCart from "./achievementCart";
 
 export default function AchievementCartSet() {
