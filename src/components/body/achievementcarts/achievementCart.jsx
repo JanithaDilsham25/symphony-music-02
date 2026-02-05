@@ -1,3 +1,4 @@
+
 export default function AchievementCart({ icon, count, title }) {
   return (
     <div className=" xl:w-64  md:w-43 w-40   flex flex-col justify-center items-center  xl:gap-3 gap-2">

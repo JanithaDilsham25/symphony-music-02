@@ -1,4 +1,4 @@
-import iconStudent from "../../../assets/achievementcart/iconStudent.png";
+import iconStudent from "/src/assets/achievementcart/IconStudent.png";
 import iconInstrument from "../../../assets/achievementcart/iconInstrument.png";
 import iconAward from "../../../assets/achievementcart/iconAward.png";
 import iconExcellence from "../../../assets/achievementcart/iconExcellence.png";
